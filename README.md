@@ -36,7 +36,9 @@ git clone https://github.com/your-username/my-portfolio.git
 
 Attached are some screenshots so you can see how the website looks on different devices.
 
-(images/ejemplo.png)
+![Imagen de ejemplo](readmeImages/img(1).png)
+![Imagen de ejemplo](readmeImages/img(2).png)
+![Imagen de ejemplo](readmeImages/img(3).png)
 
 ## Contributions
 

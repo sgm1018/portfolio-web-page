@@ -49,6 +49,3 @@ Contributions are welcome! If you'd like to make improvements to the design, fix
 If you have any questions or just want to say hello, don't hesitate to reach out to me via email: youremail@example.com
 
 Thanks for visiting my portfolio website!
-
----
-*Note: This README is just an example template. Please modify and customize it according to your project and needs.*

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            const nav = document.getElementById('nav');
+            const tittle = document.getElementById('tittle');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('md:flex justify-center');
+            nav.classList.toggle('flex')
+            tittle.classList.toggle('text-center')
+            
+        }
+    </script>
+</head>
+<body>
+    <header class="bg-gray-900 text-white py-8">
+      <div id="nav" class="container mx-auto flex justify-between">
+          <div class="text-2xl font-bold animate-bounce"><p id="tittle">S<span class="px-2 rounded "  style="background-color: rgba(60, 222, 240, 0.481);">G</span>M</p></div>
+          <nav id="menu" class="hidden md:flex gap-2">
+              <a href="#acerca" class="px-4 gap-4 inline-block transition-transform duration-150 transform-gpu hover:scale-125 hover:bg-gray-700 rounded">Acerca de Mí</a>
+              <a href="#proyectos" class="px-4 inline-block transition-transform duration-150 transform-gpu hover:scale-125 hover:bg-gray-700 rounded">Proyectos</a>
+              <a href="#experiencia" class="px-4 inline-block transition-transform duration-150 transform-gpu hover:scale-125 hover:bg-gray-700 rounded">Experiencia</a>
+              <a href="#contacto" class="px-4 inline-block transition-transform duration-150 transform-gpu hover:scale-125 hover:bg-gray-700 rounded">Contacto</a>
+          </nav>
+          <button class="ml-auto md:hidden p-2 border-2 border-white rounded text-white opacity-60" onclick="toggleMenu()">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+          </button>
+      </div>
+    </header>
+      <section class="text-center py-20 bg-gray-100">
+        <h1 class="text-5xl font-bold"><span class="animate-pulse">Sergio González Martínez</span></h1>
+        <p class="text-xl mt-4">DevSecOps / Desarrolador / Ciberseguridad</p>
+      </section>
+      
+    <section class="bg-gray-100 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                Acerca de Mí
+            </h2>
+            <p class="mt-4 text-lg leading-6 text-gray-600">
+                Soy un profesional apasionado por la tecnología, con experiencia en desarrollo web, diseño gráfico, y mucho más.
+            </p>
+        </div>
+        <div class="mt-10 max-w-4xl mx-auto text-center flex flex-wrap justify-center">
+            <div class="w-full sm:w-1/2 lg:w-1/4 p-4">
+                <h3 class="text-xl font-bold">Desarrollo Web</h3>
+                <p>HTML, CSS, JavaScript, etc.</p>
+            </div>
+            <!-- Puedes agregar más habilidades aquí -->
+        </div>
+    </section>
+    <section id="proyectos" class="py-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:border hover:border-blue-200 hover:border-opacity-50">  
+          <h2 class="text-3xl font-extrabold">Proyectos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            <!-- Proyecto individual -->
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+              <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+              <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+              <p class="mt-2">Descripción del proyecto.</p>
+              <a href="#" class="mt-4 text-blue-600">Ver más</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+                <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+                <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+                <p class="mt-2">Descripción del proyecto.</p>
+                <a href="#" class="mt-4 text-blue-600">Ver más</a>
+              </div>
+                          <div class="bg-white p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:shadow-xl hover:scale-105">
+              <img src="proyecto1.jpg" alt="Proyecto 1" class="rounded">
+              <h3 class="mt-4 text-xl font-bold">Proyecto 1</h3>
+              <p class="mt-2">Descripción del proyecto.</p>
+              <a href="#" class="mt-4 text-blue-600">Ver más</a>
+            </div>
+            <!-- Repite para otros proyectos -->
+          </div>
+        </div>
+      </section>
+      
+<!-- HTML -->
+<section id="experiencia" class="bg-gray-100 py-12">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Experiencia Laboral</h2>
+
+    <!-- Experiencia 1 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-6 flex transition-transform duration-1000 ease-in-out transform hover:scale-105 hover:bg-blue-400 hover:bg-opacity-30">
+      <div class="flex-shrink-0 mr-4">
+        <img class="w-12 h-12 rounded-full object-cover" src="ruta-a-tu-imagen.jpg" alt="Logo de la empresa 1">
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-800">Nombre de la Empresa 1</h3>
+        <p class="text-gray-600">Puesto: Desarrollador Frontend</p>
+        <p class="text-gray-600">Fecha: Enero 2022 - Presente</p>
+        <p class="text-gray-700 mt-2">Descripción de tus responsabilidades y logros en el puesto.</p>
+      </div>
+    </div>
+
+    <!-- Experiencia 2 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-6 flex transition-transform duration-1000 ease-in-out transform hover:scale-105 hover:bg-blue-400 hover:bg-opacity-30">
+      <div class="flex-shrink-0 mr-4">
+        <img class="w-12 h-12 rounded-full object-cover" src="ruta-a-tu-imagen.jpg" alt="Logo de la empresa 2">
+      </div>
+      <div>
+        <h3 class="text-xl font-bold text-gray-800">Nombre de la Empresa 2</h3>
+        <p class="text-gray-600">Puesto: Diseñador UX/UI</p>
+        <p class="text-gray-600">Fecha: Julio 2020 - Diciembre 2021</p>
+        <p class="text-gray-700 mt-2">Descripción de tus responsabilidades y logros en el puesto.</p>
+      </div>
+    </div>
+
+    <!-- Puedes agregar más experiencias laborales aquí -->
+
+  </div>
+</section>
+
+      <section id="contacto" class="py-12">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-extrabold">Contacto</h2>
+          <form class="mt-8 max-w-md mx-auto">
+            <div class="flex flex-wrap -mx-2">
+              <div class="w-1/2 px-2">
+                <input type="text" placeholder="Nombre" class="w-full p-2 rounded border">
+              </div>
+              <div class="w-1/2 px-2">
+                <input type="email" placeholder="Correo" class="w-full p-2 rounded border">
+              </div>
+            </div>
+            <textarea placeholder="Mensaje" class="w-full p-2 mt-4 rounded border"></textarea>
+            <button class="mt-4 p-2 bg-blue-600 text-white rounded">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center">
+          <div class="flex flex-wrap justify-center mb-4">
+            <a href="#" class="px-4">Twitter</a>
+            <a href="#" class="px-4">LinkedIn</a>
+            <!-- Otros enlaces a redes sociales -->
+          </div>
+          <p>&copy; 2023 Sergio González Martínez. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+      
+</body>
+</html>
